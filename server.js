@@ -108,6 +108,11 @@ const verifyJWT = (req, res, next) => {
     });
 };
 
+server.get("/", (req, res) => {
+    res.status(200).send("Server is alive");
+});
+
+
 
 //upload image url route
 server.get('/get-upload-url',(req,res)=>{
